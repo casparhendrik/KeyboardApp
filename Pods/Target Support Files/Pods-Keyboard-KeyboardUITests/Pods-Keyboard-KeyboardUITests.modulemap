@@ -1,0 +1,6 @@
+framework module Pods_Keyboard_KeyboardUITests {
+  umbrella header "Pods-Keyboard-KeyboardUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

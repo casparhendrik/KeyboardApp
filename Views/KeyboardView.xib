@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="tWt-eK-dK0" userLabel="View" customClass="KeyboardView" customModule="Keyboard" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="x6E-OU-JcM">
+                    <rect key="frame" x="0.0" y="44" width="375" height="106"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Ohc-5Q-tv2">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="17"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rVF-b1-cKM" customClass="KeyboardButton" customModule="Keyboard" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="121.5" height="17"/>
+                                    <state key="normal" title="Naam"/>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kma-dv-qz5" customClass="KeyboardButton" customModule="Keyboard" customModuleProvider="target">
+                                    <rect key="frame" x="126.5" y="0.0" width="122" height="17"/>
+                                    <state key="normal" title="Email"/>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B3g-D8-2tj" customClass="KeyboardButton" customModule="Keyboard" customModuleProvider="target">
+                                    <rect key="frame" x="253.5" y="0.0" width="121.5" height="17"/>
+                                    <state key="normal" title="Geboortedatum"/>
+                                </button>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="R0H-9d-nD7">
+                            <rect key="frame" x="0.0" y="22" width="375" height="17.5"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Mg-29-mbb" customClass="KeyboardButton" customModule="Keyboard" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="33" height="17.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                    <state key="normal" title="q">
+                                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="pressLetter:" destination="tWt-eK-dK0" eventType="touchUpInside" id="Lcq-sF-9mq"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ibe-JT-Cym" customClass="KeyboardButton" customModule="Keyboard" customModuleProvider="target">
+                                    <rect key="frame" x="38" y="0.0" width="33" height="17.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                    <state key="normal" title="w">
+                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="pressLetter:" destination="tWt-eK-dK0" eventType="touchUpInside" id="K9x-V4-NZP"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tqe-n0-HQZ" customClass="KeyboardButton" customModule="Keyboard" customModuleProvider="target">
+                                    <rect key="frame" x="76" y="0.0" width="33" height="17.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                    <state key="normal" title="e">
+                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="pressLetter:" destination="tWt-eK-dK0" eventType="touchUpInside" id="6Si-h5-xXa"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O84-FC-WrK" customClass="KeyboardButton" customModule="Keyboard" customModuleProvider="target">
+                                    <rect key="frame" x="114" y="0.0" width="33" height="17.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                    <state key="normal" title="r">
+                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="pressLetter:" destination="tWt-eK-dK0" eventType="touchUpInside" id="CJc-s5-YFh"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wqI-aK-zcv" customClass="KeyboardButton" customModule="Keyboard" customModuleProvider="target">
+                                    <rect key="frame" x="152" y="0.0" width="33" height="17.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                    <state key="normal" title="t">
+                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="pressLetter:" destination="tWt-eK-dK0" eventType="touchUpInside" id="f8Y-a3-5WW"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="55B-P3-Krf" customClass="KeyboardButton" customModule="Keyboard" customModuleProvider="target">
+                                    <rect key="frame" x="190" y="0.0" width="33" height="17.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                    <state key="normal" title="y">
+                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="pressLetter:" destination="tWt-eK-dK0" eventType="touchUpInside" id="YD0-3f-bWd"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wj9-ko-oqc" customClass="KeyboardButton" customModule="Keyboard" customModuleProvider="target">
+                                    <rect key="frame" x="228" y="0.0" width="33" height="17.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                    <state key="normal" title="u">
+                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="pressLetter:" destination="tWt-eK-dK0" eventType="touchUpInside" id="iTT-YT-Jgw"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sDF-il-f9q" customClass="KeyboardButton" customModule="Keyboard" customModuleProvider="target">
+                                    <rect key="frame" x="266" y="0.0" width="33" height="17.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                    <state key="normal" title="i">
+                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="pressLetter:" destination="tWt-eK-dK0" eventType="touchUpInside" id="IkV-DO-ZFA"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="El5-tc-oTC" customClass="KeyboardButton" customModule="Keyboard" customModuleProvider="target">
+                                    <rect key="frame" x="304" y="0.0" width="33" height="17.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                    <state key="normal" title="o">
+                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="pressLetter:" destination="tWt-eK-dK0" eventType="touchUpInside" id="hO2-gV-Zto"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5uw-VC-zXC" customClass="KeyboardButton" customModule="Keyboard" customModuleProvider="target">
+                                    <rect key="frame" x="342" y="0.0" width="33" height="17.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                    <state key="normal" title="p">
+                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="pressLetter:" destination="tWt-eK-dK0" eventType="touchUpInside" id="rWY-Ou-WwN"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="wDt-rN-7fB">
+                            <rect key="frame" x="0.0" y="44.5" width="375" height="17"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HwW-hT-Z7B" customClass="KeyboardButton" customModule="Keyboard" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="37" height="17"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                    <state key="normal" title="a">
+                                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="pressLetter:" destination="tWt-eK-dK0" eventType="touchUpInside" id="JOC-0L-nhu"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yQO-cU-tOA" customClass="KeyboardButton" customModule="Keyboard" customModuleProvider="target">
+                                    <rect key="frame" x="42" y="0.0" width="37.5" height="17"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                    <state key="normal" title="s">
+                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="pressLetter:" destination="tWt-eK-dK0" eventType="touchUpInside" id="AC6-D0-0fJ"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VUX-Ee-Q4P" customClass="KeyboardButton" customModule="Keyboard" customModuleProvider="target">
+                                    <rect key="frame" x="84.5" y="0.0" width="37" height="17"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                    <state key="normal" title="d">
+                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="pressLetter:" destination="tWt-eK-dK0" eventType="touchUpInside" id="nQE-v4-UGj"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z4V-YG-SQo" customClass="KeyboardButton" customModule="Keyboard" customModuleProvider="target">
+                                    <rect key="frame" x="126.5" y="0.0" width="37.5" height="17"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                    <state key="normal" title="f">
+                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="pressLetter:" destination="tWt-eK-dK0" eventType="touchUpInside" id="sOP-sw-P0F"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3bA-Rg-JC5" customClass="KeyboardButton" customModule="Keyboard" customModuleProvider="target">
+                                    <rect key="frame" x="169" y="0.0" width="37" height="17"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                    <state key="normal" title="g">
+                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="pressLetter:" destination="tWt-eK-dK0" eventType="touchUpInside" id="x2C-vq-ij9"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7AH-Ga-Vd7" customClass="KeyboardButton" customModule="Keyboard" customModuleProvider="target">
+                                    <rect key="frame" x="211" y="0.0" width="37.5" height="17"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                    <state key="normal" title="h">
+                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="pressLetter:" destination="tWt-eK-dK0" eventType="touchUpInside" id="Pje-DJ-iN8"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rEf-bB-zI1" customClass="KeyboardButton" customModule="Keyboard" customModuleProvider="target">
+                                    <rect key="frame" x="253.5" y="0.0" width="37" height="17"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                    <state key="normal" title="j">
+                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="pressLetter:" destination="tWt-eK-dK0" eventType="touchUpInside" id="kBa-MW-HJ6"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JBt-nB-38O" customClass="KeyboardButton" customModule="Keyboard" customModuleProvider="target">
+                                    <rect key="frame" x="295.5" y="0.0" width="37.5" height="17"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                    <state key="normal" title="k">
+                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="pressLetter:" destination="tWt-eK-dK0" eventType="touchUpInside" id="Hpz-nB-F9e"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h28-ab-NMc" customClass="KeyboardButton" customModule="Keyboard" customModuleProvider="target">
+                                    <rect key="frame" x="338" y="0.0" width="37" height="17"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                    <state key="normal" title="l">
+                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="pressLetter:" destination="tWt-eK-dK0" eventType="touchUpInside" id="bQQ-4v-CEw"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="eS3-fP-Ze8">
+                            <rect key="frame" x="0.0" y="66.5" width="375" height="17.5"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ets-oX-9eD" customClass="KeyboardButton" customModule="Keyboard" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="42.5" height="17.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                    <state key="normal" title="z">
+                                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="pressLetter:" destination="tWt-eK-dK0" eventType="touchUpInside" id="qso-sz-4b2"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pcW-wE-4rk" customClass="KeyboardButton" customModule="Keyboard" customModuleProvider="target">
+                                    <rect key="frame" x="47.5" y="0.0" width="42.5" height="17.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                    <state key="normal" title="x">
+                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="pressLetter:" destination="tWt-eK-dK0" eventType="touchUpInside" id="1en-m6-Ayl"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Maw-IQ-dv8" customClass="KeyboardButton" customModule="Keyboard" customModuleProvider="target">
+                                    <rect key="frame" x="95" y="0.0" width="42.5" height="17.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                    <state key="normal" title="c">
+                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="pressLetter:" destination="tWt-eK-dK0" eventType="touchUpInside" id="SNf-Gl-Gi6"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vwV-co-yw5" customClass="KeyboardButton" customModule="Keyboard" customModuleProvider="target">
+                                    <rect key="frame" x="142.5" y="0.0" width="42.5" height="17.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                    <state key="normal" title="v">
+                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="pressLetter:" destination="tWt-eK-dK0" eventType="touchUpInside" id="x8N-Wu-0dL"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mxd-Kt-a4L" customClass="KeyboardButton" customModule="Keyboard" customModuleProvider="target">
+                                    <rect key="frame" x="190" y="0.0" width="42.5" height="17.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                    <state key="normal" title="b">
+                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="pressLetter:" destination="tWt-eK-dK0" eventType="touchUpInside" id="rvb-9X-QXf"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ePH-zi-4be" customClass="KeyboardButton" customModule="Keyboard" customModuleProvider="target">
+                                    <rect key="frame" x="237.5" y="0.0" width="42.5" height="17.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                    <state key="normal" title="n">
+                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="pressLetter:" destination="tWt-eK-dK0" eventType="touchUpInside" id="EAs-uX-BTh"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Odp-d6-1Ov" customClass="KeyboardButton" customModule="Keyboard" customModuleProvider="target">
+                                    <rect key="frame" x="285" y="0.0" width="42.5" height="17.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                    <state key="normal" title="m">
+                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="pressLetter:" destination="tWt-eK-dK0" eventType="touchUpInside" id="Ghl-dg-Efd"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cI4-5g-DFP" customClass="KeyboardButton" customModule="Keyboard" customModuleProvider="target">
+                                    <rect key="frame" x="332.5" y="0.0" width="42.5" height="17.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                    <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <state key="normal" image="Backspace">
+                                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="deletePressed" destination="tWt-eK-dK0" eventType="touchUpInside" id="n6c-hf-wbE"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="HbF-FU-vFn">
+                            <rect key="frame" x="0.0" y="89" width="375" height="17"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qCV-0t-Lcp" customClass="KeyboardButton" customModule="Keyboard" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="70" height="17"/>
+                                    <state key="normal" image="NextKeyboard">
+                                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    </state>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kBj-UT-25l" customClass="KeyboardButton" customModule="Keyboard" customModuleProvider="target">
+                                    <rect key="frame" x="75" y="0.0" width="194.5" height="17"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                    <state key="normal" title="space">
+                                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="spacePressed" destination="tWt-eK-dK0" eventType="touchUpInside" id="IB1-2U-NI0"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Gb-YO-5hT" customClass="KeyboardButton" customModule="Keyboard" customModuleProvider="target">
+                                    <rect key="frame" x="274.5" y="0.0" width="100.5" height="17"/>
+                                    <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <state key="normal" image="arrow.turn.down.left" catalog="system">
+                                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="spacePressed" destination="tWt-eK-dK0" eventType="touchUpInside" id="yzr-AP-aww"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="x6E-OU-JcM" firstAttribute="leading" secondItem="HkB-4y-Zsn" secondAttribute="leading" id="3Hs-O1-jLE"/>
+                <constraint firstItem="x6E-OU-JcM" firstAttribute="top" secondItem="HkB-4y-Zsn" secondAttribute="top" id="6DM-yn-cCT"/>
+                <constraint firstItem="HkB-4y-Zsn" firstAttribute="trailing" secondItem="x6E-OU-JcM" secondAttribute="trailing" id="6u7-hH-UR1"/>
+                <constraint firstItem="x6E-OU-JcM" firstAttribute="bottom" secondItem="HkB-4y-Zsn" secondAttribute="bottom" id="Mby-u3-9Zl"/>
+                <constraint firstItem="x6E-OU-JcM" firstAttribute="centerX" secondItem="HkB-4y-Zsn" secondAttribute="centerX" id="NDp-E9-yNf"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="HkB-4y-Zsn"/>
+            <connections>
+                <outlet property="deleteButton" destination="cI4-5g-DFP" id="AbK-89-dYl"/>
+                <outlet property="nextKeyboardButton" destination="qCV-0t-Lcp" id="CvF-MK-Xtx"/>
+            </connections>
+            <point key="canvasLocation" x="97.826086956521749" y="33.482142857142854"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Backspace" width="24" height="18"/>
+        <image name="NextKeyboard" width="19" height="19"/>
+        <image name="arrow.turn.down.left" catalog="system" width="64" height="48"/>
+    </resources>
+</document>
