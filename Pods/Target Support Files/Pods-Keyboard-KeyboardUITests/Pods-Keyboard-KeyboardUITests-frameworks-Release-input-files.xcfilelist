@@ -1,3 +1,5 @@
 ${PODS_ROOT}/Target Support Files/Pods-Keyboard-KeyboardUITests/Pods-Keyboard-KeyboardUITests-frameworks.sh
-${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework
-${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework
+${BUILT_PRODUCTS_DIR}/ALSystemUtilities-iOS13.0/ALSystemUtilities.framework
+${BUILT_PRODUCTS_DIR}/GoogleUtilities-iOS13.0/GoogleUtilities.framework
+${BUILT_PRODUCTS_DIR}/leveldb-library-iOS13.0/leveldb.framework
+${BUILT_PRODUCTS_DIR}/nanopb-iOS13.0/nanopb.framework

@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:Keyboard/Location/FakeLocation.gpx">
+   </FileRef>
+   <FileRef
       location = "group:Keyboard.xcodeproj">
    </FileRef>
    <FileRef
